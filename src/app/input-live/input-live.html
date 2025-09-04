@@ -1,0 +1,16 @@
+<div>
+  <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" [value]="title" (input)="onInput($event)" />
+  </mat-form-field>
+</div>
+
+<p>You should check the console with F12.</p>
+
+<div><button mat-raised-button color="primary" (click)="onClick(this)">Basic</button></div>
+
+<p>You like {{ title }}</p>
+
+<div>
+  <button mat-raised-button color="primary" (click)="onTwoWayClick($event)">Two way binding</button>
+</div>
