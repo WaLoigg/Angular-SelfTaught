@@ -1,0 +1,14 @@
+.cerchio-verde, .cerchio-rosso {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.cerchio-rosso{
+  background-color: red;
+}
+.cerchio-verde{
+  background-color: springgreen;
+}

@@ -1,0 +1,27 @@
+<ul>
+  @for (persona of persone; track persona.nome) {
+  <li>{{ persona.nome }} {{ persona.cognome }}, Età: {{ persona.eta }} + "anni"</li>
+  @if (persona.isOnline) {
+  <span class="cerchio-verde">(Online)</span>
+  } @else {
+  <span class="cerchio-rosso">(Offline)</span>
+  } }
+</ul>
+
+@switch (numero) {
+    @case (1) {
+        <p>Il numero è 1</p>
+    }
+    @case (2) {
+        <p>Il numero è 2</p>
+    }
+    @case (3) {
+        <p>Il numero è 3</p>
+    }
+    @case (4) {
+        <p>Il numero è 4</p>
+    }
+    @default {
+        <p>Il numero non è tra 1 e 4</p>
+    }
+}
